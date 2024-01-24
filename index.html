@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex" href="#">
+          <img src="images/logo.png" class="img me-3 p-2" alt="logo" />
+          <div class="mt-2">
+            <p>
+              Weather
+              <span>tagline goes here</span>
+            </p>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="home">
+      <div class="container">
+        <form class="find-location position-relative">
+          <input
+            type="text"
+            class="search-input position-relative form-control rounded-5 p-3"
+            placeholder="Find your location..."
+            id="search"
+          />
+          <input
+            type="button"
+            class="submit-btn btn rounded-5"
+            value="Find"
+            id="submit"
+          />
+        </form>
+      </div>
+    </div>
+
+    <div class="weatherTable">
+      <div class="container">
+        <div class="row  d-flex justify-content-center">
+          <div class="col-md-4 ">
+           <div class="h-100 w-100 current-day">
+            <div class="table-header d-flex justify-content-between">
+              <div class="day"></div>
+              <div class="date"></div>
+            </div>
+            <div class="table-content">
+             
+              <div class="location"></div>
+              <div class="degree row gx-5 align-items-center">
+                <div class="num col-md-6 "></div>
+
+                <div class="forecast-icon  col-md-6"></div>
+              </div>
+              <div class="custom mb-3"></div>
+              <span class="me-3"
+                ><img
+                  src="images/icon-umberella.png"
+                  class="me-2"
+                  alt=""
+                />20%</span
+              >
+              <span class="me-3"
+                ><img
+                  src="images/icon-wind.png"
+                  class="me-2"
+                  alt=""
+                />18km/h</span
+              >
+              <span class="me-3"
+                ><img
+                  src="images/icon-compass.png"
+                  class="me-2"
+                  alt=""
+                />East</span
+              >
+            </div>
+           </div>
+          </div>
+
+          <div class="col-md-4 ">
+         <div class="h-100 w-100 second-day">
+          <div class="table-header">
+            <div class="nextDay"></div>
+          </div>
+          <div class="degree">
+            <div class="nextIcon"></div>
+            <div class="nextMaxTemp"></div>
+            <div class="nextMinTemp mb-3"></div>
+          </div>
+          <div class="nextCustom mb-3"></div>
+         </div>
+          </div>
+
+          <div class="col-md-4 ">
+          <div class="h-100 w-100 therid-day">
+            <div class="table-header">
+              <div class="nextDay"></div>
+            </div>
+            <div class="degree">
+              <div class="nextIcon"></div>
+              <div class="nextMaxTemp"></div>
+              <div class="nextMinTemp mb-3"></div>
+            </div>
+            <div class="nextCustom mb-3"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-8 mb-4">
+            <form class="find-location position-relative">
+              <input
+                type="text"
+                class="search-input position-relative form-control rounded-5 p-3"
+                placeholder="Enter your email to subscribe..."
+              />
+              <input
+                type="button"
+                class="submit-btn btn rounded-5"
+                value="Subscribe"
+                id="s"
+              />
+            </form>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="colophon">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+body{
+  background-color: #1e202b;
+  color: #bfc1c8;;
+}
+.navbar-toggler {
+  background-color: white;
+
+}
+.navbar
+{
+ 
+  padding: 40px !important;
+}
+.navbar a{
+  color: white !important;
+}
+.navbar-brand{
+  font-size: 12px;
+}
+
+.navbar-brand p{
+  padding-bottom: 0px;
+    font-size: 1.1428571429em;
+    color: white;
+}
+.navbar-brand span{
+  font-size: 0.7142857143em;
+  display: block;
+  color: #bfc1c8;
+}
+.nav-link{
+  padding: 0px 25px !important;
+  margin-right: 10px;
+  transition: all 0.6s;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
+.navbar-nav .active{
+  padding: 0px 25px !important;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    border-color: #009ad8;
+    color: #009ad8 !important;
+}
+.nav-link:hover{
+    border-color: #009ad8;
+    color: #009ad8 !important;
+}
+
+.home{
+  background-image: url(../images/banner.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 70px 0;
+  min-height: 350px;
+}
+.find-location input[type="text"] {
+  width: 100%;
+  padding: 20px 50px 20px 20px;
+  background: #1e202b;
+  color: white;
+  border-color: #1e202b;
+}
+.find-location input::placeholder{
+  color: rgb(139, 137, 137) !important;
+}
+.find-location .submit-btn{
+position: absolute;
+top: 12%;
+right: 1%;
+padding: 10px 40px;
+color: white;
+background-color: #009ad8;
+}
+
+.forecast-table{
+  color: white;
+}
+.table-header{
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+}
+.weatherTable{
+  position: relative;
+  top: -120px;
+}
+.weatherTable  .current-day{
+background-color: #323544;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .weatherTable  .current-day{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    }
+}
+
+.weatherTable .second-day{
+  background-color:#262936;
+  text-align: center;
+}
+.weatherTable  .nextMaxTemp {
+  font-size: 1.7142857143em;
+  color: white;
+  font-weight: 700;
+}
+.weatherTable .therid-day{
+  background-color:#323544;
+  border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .weatherTable  .therid-day{
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    }
+}
+
+.table-content{
+padding: 10px 20px;
+}
+.table-content .location{
+  font-size: 1.2857142857em;
+    font-weight: 400;
+}
+.table-content .degree{
+  font-size: 60px;
+  color: white;
+  font-weight: 700;
+}
+
+ .custom , .nextCustom{
+  color: #009ad8 ;
+}
+footer{
+  background: #262936;
+    padding: 50px 0;
+}
+.site-footer .social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #1e202b;
+  color: #009ad8 ;
+  text-align: center;
+  line-height: 2;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 20px;
+
+}
+.site-footer .social-links a:hover{
+  background: #009ad8;
+  color: white;
+}
